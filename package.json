@@ -1,5 +1,17 @@
 {
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.6",
     "npm": "^3.10.9"
-  }
+  },
+  "name": "music-box",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/KChance07/music-box.git",
+    "type": "git"
+  },
+  "author": "Kyle Chance <kylechance@gmail.com>",
+  "license": "MIT"
 }
