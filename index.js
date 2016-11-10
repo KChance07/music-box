@@ -1,7 +1,7 @@
 var express = require('express');
 var server = express();
 var mongoose = require('mongoose');
-var todoRouter = require(./server/routers/todo.router.js);
+var musicboxRouter = require(./server/routers/musicbox.router.js);
 var mongoURI = process.env.MONGOURI || require('./config.js').mongoURI;
 
 mongoose.connect(mongoURI);
@@ -14,7 +14,7 @@ server.get('/', function(req, res){
   res.sendFile('public/html/index.html', {root:__dirname});
 });
 
-server.use(todoRouter);
+server.use(musicboxRouter);
 
 server.listen(port, function(){
   console.log('Now listening on port...', port);
