@@ -12,3 +12,4 @@ server.use(albumRouter);
 
 server.listen(port, function(){
   console.log('Now listening on port...', port);
+});
